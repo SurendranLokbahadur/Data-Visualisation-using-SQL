@@ -19,6 +19,16 @@ CREATE TABLE sales_data (
     Product_Name VARCHAR(100),
     Sales DECIMAL(10, 2)
 );
+
+BULK INSERT sales_data
+FROM 'C:\Users\suren\OLD-REPOSITORY( files)\Downloads\Visual-Studio_Codes\codes\PYTHON-practice\task 1'
+WITH (
+    FIELDTERMINATOR = ',',  -- Specify the delimiter (comma in this case)
+    ROWTERMINATOR = '\n',   -- Specify the end-of-row character
+    FIRSTROW = 2,           -- Skip the header row if needed
+    ERRORFILE = 'C:\Users\suren\OLD-REPOSITORY( files)\Downloads\Visual-Studio_Codes\codes\PYTHON-practice\task 1' -- Optional: for capturing errors
+);
+GO
 ______________________________________________________________________________________________________________
 
 1. BAR CHART: Compare total sales for each product.
