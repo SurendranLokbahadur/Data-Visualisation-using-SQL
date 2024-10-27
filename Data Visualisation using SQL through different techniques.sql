@@ -19,8 +19,6 @@ CREATE TABLE sales_data (
     Product_Name VARCHAR(100),
     Sales DECIMAL(10, 2)
 );
-
-COPY sales_data FROM 'C:\Users\suren\OLD-REPOSITORY( files)\Downloads\Visual-Studio_Codes\codes\PYTHON-practice\task 1',' CSV HEADER;
 ______________________________________________________________________________________________________________
 
 1. BAR CHART: Compare total sales for each product.
