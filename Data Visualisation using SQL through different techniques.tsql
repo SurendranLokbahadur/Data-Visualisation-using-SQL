@@ -1,7 +1,5 @@
 1. BAR CHART: Compare total sales for each product.
 
-*.sql linguist-language=SQL
-
 SELECT product, SUM(sales_amount) AS total_sales
 FROM sales_data
 GROUP BY product
